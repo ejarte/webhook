@@ -44,6 +44,5 @@ jobs:
     - name: push
       run: |
           cd Web
-          git remote set-url origin https://ejarte:${{ github.TOKEN }}@git@github.com:ejarte/webhook.git
-          git push -f
-
+          git remote set-url origin git@github.com:ejarte/webhook.git
+          git push -f https://ejarte:${{ secrets.CLONE_TOKEN }}@github.com/ejarte/webhook.git
