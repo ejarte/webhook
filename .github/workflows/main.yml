@@ -44,6 +44,6 @@ jobs:
     - name: push
       run: |
           cd Web
-          git remote set-url origin git@github.com:ejarte/webhook.git
+          git remote set-url origin https://ejarte:${{ secrets.TOKEN }}@gits-15.sys.kth.se/Kaleidoscope/Web.git
           git push -f
 
